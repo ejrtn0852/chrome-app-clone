@@ -4,7 +4,7 @@ const body = document.querySelector("body");
 export const bgImg = document.createElement("img");
 const alarm = document.querySelector("#alarm-animation > i");
 
-const secondBg = "http://127.0.0.1:5500/backgruondImg/wow.jpeg";
+const secondBg = "https://ejrtn0852.github.io/chrome-js/backgruondImg/wow.jpeg";
 export const firstBg = "http://127.0.0.1:5500/backgruondImg/chromAppImg2.jpeg";
 
 const bgImgArr = ["chromAppImg2.jpeg","wow.jpeg"];
