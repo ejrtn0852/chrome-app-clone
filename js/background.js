@@ -5,7 +5,7 @@ export const bgImg = document.createElement("img");
 const alarm = document.querySelector("#alarm-animation > i");
 
 const secondBg = "https://ejrtn0852.github.io/chrome-js/backgruondImg/wow.jpeg";
-export const firstBg = "http://127.0.0.1:5500/backgruondImg/chromAppImg2.jpeg";
+export const firstBg = "https://ejrtn0852.github.io/chrome-js/backgruondImg/chromAppImg2.jpeg";
 
 const bgImgArr = ["chromAppImg2.jpeg","wow.jpeg"];
 const bgIndex = bgImgArr[Math.floor(Math.random() * bgImgArr.length)];
