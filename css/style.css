@@ -1,0 +1,23 @@
+@import "form.css";
+@import "alarm.css";
+@import "quotes.css";
+
+
+
+
+
+
+body {
+    width: 98vw;
+    height: 98vh;
+}
+img {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

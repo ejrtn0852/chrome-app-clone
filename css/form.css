@@ -1,0 +1,71 @@
+.welcome-box {
+    width: 97vw;
+    height: 97vh;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    font-size: 50px;
+    color: white;
+}
+
+#todo-form,
+#name-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#name-input,
+#todo-input {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    width: 200px;
+    margin: 30px;
+    font-size: 20px;
+    color: white;
+}
+#name-input:focus,
+#todo-input:focus {
+    outline: none;
+}
+
+#name-input::placeholder,
+#todo-input::placeholder{
+    opacity: 0.5;
+    color: white;
+} 
+#name-input:focus::placeholder,
+#todo-input:focus::placeholder{
+    color:transparent;
+}
+
+#welcome-text {
+    font-size: 20px;
+    color: white;
+    margin: 30px;
+    display: none;
+}
+
+#todo-form + ul > li {
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#todo-form + ul > li  > button {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    
+}
+
+#todo-text {
+    padding: 0;
+}

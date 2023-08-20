@@ -1,0 +1,14 @@
+.quotes {
+    height: 95vh;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.quotes{
+    color: white;
+    font-style: italic;
+}

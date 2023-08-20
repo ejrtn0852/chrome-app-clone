@@ -3,24 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <main class="backgruond-img">
-        <img src="backgruondImg/chromAppImg1.jpeg" alt="">
-        <div class="form-teg">
-            <form action="#">
-                <span>Time</span>
-                <input type="text">
-                <span>이름저장소</span>
-                <input type="text">
-                <input type="submit">
-                <span>Todo List</span>
-            </form>
-        </div>
-    </main>
+    <img src="backgruondImg/chromAppImg2.jpeg" alt="">
+    <header class="welcome-box">
+        <span id="clock">시간</span>
+        <form action="#" id="name-form">
+            <input id="name-input" type="text" required placeholder="이름이 뭐에요?"/>
+            <span id="welcome-text"></span>
+        </form>
+        <form action="#" id="todo-form">
+            <input id="todo-input" type="text" placeholder="할일 목록을 적어볼까요?"/>
+        </form>
+        <ul id="todo-text"></ul>
+    </header>
 
-    <script src="js/index.js"></script>
+    <div id="weather-api">
+        <span></span>
+        <div class="alarm">
+            <form action="#" id="alarm-text">
+                <span></span>
+                <p><i class="fa-solid fa-exclamation" style="color: #d80e0e;"></i>정해진 시간에 알람이 울립니다!</p>
+                    <input id="alarm-input__hours" type="text" placeholder="시간 입력" required>
+                    <button id="alarm-stop">STOP!</button>
+            </form>
+            <button id="alarm-animation" class="alarm-button">
+                <i class="fa-regular fa-clock fa-xl"></i>
+            </button>
+                <div class="alarm-title">
+                    <span>Alarm</span>
+                </div>
+        </div>  
+    </div>
+
+    <footer class="quotes">
+            <span id="quotes-text"></span>
+            <span id="quotes-text2"></span>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f2e0cef0ae.js" crossorigin="anonymous"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/nameform.js"></script>
+    <script src="js/todoList.js"></script>
+    <script type="module"    src="js/background.js"></script>
+    <script type="module" src="js/alarm.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>

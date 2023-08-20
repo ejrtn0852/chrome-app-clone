@@ -1,0 +1,94 @@
+@keyframes alarm {
+    0%{
+        opacity: 0;
+        transform: none;
+    }100%{
+        opacity: 1;
+        transform: translateZ(100%)
+    }
+}
+
+#weather-api {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    display: flex;
+}
+#weather-api > span:nth-child(1) {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.alarm {
+    width: 98vw;
+    height: 3vh;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.trans-alarm {
+    animation: alarm 1s ease-in-out infinite;
+} 
+
+
+#alarm-text {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid green;
+    width: 180px;
+    height: 150px;
+    display:none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    color: black;
+}
+
+#alarm-text > p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+#alarm-text > p > i:nth-child(1) {
+    margin-right:5px;
+}
+
+#alarm-input__hours {
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid green;
+    outline: none;
+    background: transparent;
+}
+
+
+.alarm-button {
+    background-color: transparent;
+    border: none;
+}
+
+#alarm-stop {
+    border: none;
+    border-radius: 15px;
+}
+
+#alarm-stop:hover {
+    background-color: rgb(123, 217, 123);
+}
+
+
+.alarm-title{
+    width: 80px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    color: palevioletred;
+    font-weight: 600;
+}
